@@ -342,12 +342,6 @@ ul li{
         display: block;
         height: 50%;
     }
-    h1{
-        display: none;
-    }
-    .img-logo{
-        display: none;
-    }
     .div-img-principal{
         padding: 80px;
     }
@@ -362,13 +356,13 @@ ul li{
         width: 100%;
     }
     .div-lista-header li a{
-        font-size: 22px;
+        font-size: 28px;
     }
 }
 
 
 
-@media screen and (min-width: 0px) and (max-width: 380px) {
+@media screen and (min-width: 0px) and (max-width: 479px) {
     .encabezado{
         height: 80px;
     }
@@ -382,6 +376,10 @@ ul li{
     .div-lista-header li a{
         margin: 0;
         font-size: 20px;
+    }
+
+    h5{
+    display: none;
     }
 }
 

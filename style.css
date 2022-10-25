@@ -362,7 +362,7 @@ ul li{
         width: 100%;
     }
     .div-lista-header li a{
-        display: block;
+        font-size: 22px;
     }
 }
 
@@ -379,11 +379,9 @@ ul li{
         display: block;
         width: 90%;
     }
-    h1{
-        color:aquamarine
-    }
     .div-lista-header li a{
-        display: block;
+        margin: 0;
+        font-size: 20px;
     }
 }
 

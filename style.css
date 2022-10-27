@@ -265,7 +265,9 @@ h5{
 }
 
 
-
+.section-img{
+    float: center;
+}
 
 
 .div-imagenes{
@@ -408,13 +410,15 @@ ul li{
 
 
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 2200px) {
+    
     .contenido .contenido-lateral{
         width: 100%;
     }
     section .div-imagenes{
         width: 80%;
     }
+    
     .navBar{
         display: none;
     }
@@ -422,12 +426,7 @@ ul li{
 }
 
 @media screen and  (max-width: 1024px) {
-    .contenido .contenido-lateral{
-        width: 100%;
-    }
-    section .div-imagenes{
-        width: 90%;
-    }
+    
     .navBar{
         display: none;
     }
@@ -437,13 +436,6 @@ ul li{
 }
 
 @media screen and (max-width: 924px) {
-    
-    .contenido .contenido-lateral{
-        width: 100%;
-    }
-    section .div-imagenes{
-        width: 90%;
-    }
     .form{
         width: 2%;
     }
@@ -463,6 +455,10 @@ ul li{
         width: 60%;
         display: block;
         height: 50%;
+    }
+
+    .section-img {
+        width: 750px;
     }
     .div-lista-header li a{
         font-size: 27px;
@@ -486,11 +482,15 @@ ul li{
 
 
 @media screen and (min-width: 50px) and (max-width: 600px) {
+
     .encabezado{
         height: 80px;
     }
     .contenido .contenido-lateral{
         width: 100%;
+    }
+    .section-img {
+        width: 130%;
     }
     .div-imagenes{
         display: block;
@@ -527,9 +527,6 @@ ul li{
     }
     h1{
         font-size: 50px;
-    }
-    .input{
-        background-color: aqua;
     }
 
 }

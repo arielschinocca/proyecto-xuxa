@@ -76,6 +76,9 @@ ul.list{
 }
 
 
+
+
+
 @media screen and (min-width: 100px) and (max-width: 600px){
     .menu{
         width: 100%;
@@ -92,6 +95,7 @@ ul.list{
         align-items: center;
         cursor: pointer;
     }
+
     #toggler:checked ~ .menu{
         max-height: 100%;
 
@@ -103,6 +107,7 @@ ul.list{
         display: none;
     }
 }
+
 
 @media screen and (min-width: 600px) and (max-width: 1700px){
     .div-lista-header{

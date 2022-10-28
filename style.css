@@ -351,19 +351,21 @@ footer{
 
 .h5-footer{
     padding: 3px;
-    background-color: black;
+    background-color: rgb(252, 169, 204);
     width: 100%;
 }
 
 .ul-footer{
-    background-color: black;
+    background-color: rgb(252, 169, 204);
     text-decoration: none;
     width: 100%;
 }
 
+
 .ul-footer  li {
     padding: 10px;
     display: inline;
+    font-size: 25px;
 }
 
 .ul-footer li a{
@@ -373,28 +375,30 @@ footer{
 
 
 h6{
-    background-color: black;
+    background-color:rgb(252, 169, 204);
     font-size: xx-large;
     font-style: italic;
     font-weight: 900;
     color: rgb(230, 16, 51);
-    text-align: left;
+    text-align: center;
 }
 
 .section-footer2{
-    background-color: black;
+    background-color: rgb(252, 169, 204);
     width: 100%;
 }
 
 .servicios-footer{
-    background-color: black;
+    background-color: rgb(252, 169, 204);
     width: 100%;
 }
 
 .servicios-footer li{
     padding: 10px;
     text-decoration: none;
-    text-align: left;
+    text-align: center;
+    display: inline;
+    font-size: 25px;
 }
 
 ul li{

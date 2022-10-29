@@ -573,6 +573,9 @@ ul li{
         background-color: rgb(250, 223, 227);
         margin: 10%;
     }
+    .imgCarru{
+        width: 400px;
+    }
 }
 
 @media screen and (max-width: 924px) {
@@ -593,6 +596,9 @@ ul li{
         height: 90%;
         background-color: rgb(250, 223, 227);
         margin: 10%;
+    }
+    .imgCarru{
+        width: 350px;
     }
 }
 
@@ -627,6 +633,9 @@ ul li{
         height: 90%;
         background-color: rgb(250, 223, 227);
         margin: 20%;
+    }
+    .imgCarru{
+        width: 300px;
     }
 }
 
@@ -705,6 +714,9 @@ ul li{
         background-color: rgb(250, 223, 227);
         margin: 20%;
     }
+    .imgCarru{
+        width: 150px;
+    }
 }
 
 
@@ -773,6 +785,9 @@ ul li{
             background-color: rgb(250, 223, 227);
             margin: 20%;
     }
+    .imgCarru{
+        width: 100px;
+    }
 }
 
 @media screen and (max-width: 220px){
@@ -838,5 +853,9 @@ ul li{
         height: 90%;
         background-color: rgb(250, 223, 227);
         margin: 20%;
+    }
+
+    .imgCarru{
+        width: 100px;
     }
 }

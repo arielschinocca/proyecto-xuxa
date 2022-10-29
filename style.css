@@ -641,8 +641,8 @@ ul li{
         min-height: 100%;
     }
     .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9{
-        height: 350px;
-        width: 350px;
+        height: 200px;
+        width: 200px
     }
     .div-imagenes{
         display: grid;

@@ -367,6 +367,16 @@ textarea{
 
 /* section 4 footer */
 
+.mapa{
+    background-color: rgb(252, 169, 204);
+    text-align: center;
+}
+p{
+    padding: 10px;
+    font-size: larger;
+    color: brown;
+    font-family: monospace;
+}
 
 
 footer{
@@ -375,6 +385,7 @@ footer{
     font-weight: 400;
     margin: 2px;
     width: 100%;
+    margin: 0;
 }
 
 .h5-footer{
@@ -425,14 +436,32 @@ h6{
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    display: inline;
     font-size: 25px;
+    display: inline-block;
 }
 
 ul li{
     list-style: none;
 }
 
+.redesSociales{
+    background-color: rgb(252, 169, 204);
+    text-align: end;
+}
+
+.redes li{
+    display: inline;
+}
+
+.img-face {
+    max-width: 40px;
+    margin: 10px
+}
+
+.img-inst{
+    max-width: 40px;
+    margin: 10px
+}
 
 
 

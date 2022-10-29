@@ -313,6 +313,55 @@ h5{
     margin: 20%;
 }
 
+
+/*main carrucel*/
+
+.carrousel{
+    width: 100%;
+    max-width: 120em;
+    overflow: hidden;
+}
+
+.carrousel .grande{
+    width: 200%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
+
+.carrousel .imgCarru{
+    width: calc( 100% / 2 - 2);
+    min-height: 10vh;
+}
+
+.carrousel .puntos{
+    width: 100%;
+    padding: .4em;
+    margin: 1em 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrousel .punto{
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    background-color: aquamarine;
+
+}
+
+.carrousel .punto.activo{
+    background-color: gold;
+}
+
 /* section 3 Formulario */
 
 

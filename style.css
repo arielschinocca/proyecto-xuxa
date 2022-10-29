@@ -77,6 +77,21 @@ ul.list{
     display: none;
 }
 
+.turnos2{
+    display: none;
+}
+
+.contacto:hover .turnos2{
+    display: inline-block;
+    padding: 2px;
+    margin: 0;
+    text-align: center;
+    width: 95px;
+    background-color: plum;
+    border-radius: 2%;
+    margin: 2px;
+}
+
 
 
 @media screen and (min-width: 100px) and (max-width: 600px){

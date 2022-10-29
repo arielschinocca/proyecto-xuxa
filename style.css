@@ -388,6 +388,11 @@ footer{
     margin: 0;
 }
 
+iframe{
+    width: 60%;
+    height: 200;
+}
+
 .h5-footer{
     padding: 3px;
     background-color: rgb(252, 169, 204);

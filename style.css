@@ -642,7 +642,7 @@ ul li{
     }
     .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9{
         height: 200px;
-        width: 200px
+        width: 150spx
     }
     .div-imagenes{
         display: grid;
@@ -711,7 +711,6 @@ ul li{
     }
     .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9{
             height: 150px;
-            width: 150px;
     }
     .div-imagenes{
             display: grid;

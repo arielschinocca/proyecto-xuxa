@@ -86,10 +86,10 @@ ul.list{
     padding: 2px;
     margin: 0;
     text-align: center;
-    width: 95px;
+    width: 100%;
     background-color: plum;
     border-radius: 2%;
-    margin: 2px;
+    margin: 4px;
 }
 
 

@@ -428,6 +428,44 @@ h5{
 
 */
 
+/*    Carrusel 2   */
+
+
+
+
+.carrusel-automatico{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.carrusel-items{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.carrusel-item{
+    min-width: 500px;
+    max-width: 500px;
+    height: 400px;
+}
+
+.carrusel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.carrousel-item:hover{
+    transform: scale(1.2);
+}
+
+
+
 /*main carrucel*/
 
 
@@ -473,43 +511,19 @@ h5{
 
 }
 
+.boton-carru {
+    max-width: 50px;
+    max-height: 50px;
+}
 
-
-/*    Carrusel 2   */
-
-
-
-
-.carrusel-automatico{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-
+.boton-carru2 {
+    max-width: 50px;
+    max-height: 50px;
 }
 
 
-.carrusel-items{
-    display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
-}
-
-.carrusel-item{
-    min-width: 500px;
-    max-width: 500px;
-    height: 400px;
-}
-
-.carrusel-item img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 
-.carrousel-item:hover{
-    transform: scale(1.2);
-}
 
 
 

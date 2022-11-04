@@ -1,11 +1,22 @@
 <?php
 
+include_once('db.php');
+
 //Conecto mi form / nombre, correo, telefono y mensaje/ con el server a traves del name.
 
-$nombre = $_POST['nombre']
-$correo = $_POST['correo']
-$telefono = $_POST['telefono']
-$mensaje = $_POST['mensaje']
+$nombre = $_POST['nombre'];
+$correo = $_POST['correo'];
+$telefono = $_POST['telefono'];
+$mensaje = $_POST['mensaje'];
+
+
+
+$conectar=conn(); //ejecuta las conexiones a la base de datos
+$sql="INSERT INTO usuarios ( nombre, correo, telefono, mensaje) 
+VALUES ('$nombre', '$correo', '$telefono', '$mensaje' )";
+$resul = mysqli_query($conectar , $sql)or trigger_error("Query Failed! SQL- Error: ".mysqli_error($conectar));
+
+echo "$sql";
 
 // como me va a llegar el cuerpo del mail a mi, osea lo que la gente escribio en el formulario
 

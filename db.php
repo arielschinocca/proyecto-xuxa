@@ -5,7 +5,7 @@ function conn(){
     $hostname = 'localhost';
     $usuariodb = 'root';
     $passworddb = '';
-    $dbname = 'ppi';
+    $dbname = 'proyectouñas.usuarios';
 
 
     //generando la conexion con el servidor

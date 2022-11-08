@@ -1,19 +1,19 @@
 <?php
 
-if ( isset($_POST['nombre'])) {
-    if ( !empty($_POST['nombre']) && !empty($_POST['correo'] && !empty($_POST['mensaje']))) {
-        $name = $_POST['nombre'];
-        $email = $_POST['correo'];
-        $telefono = $_POST['telefono'];
-        $mensaje = $_POST['mensaje'];
+if ( isset($_POST['usuarioNombre'])) {
+    if ( !empty($_POST['usuarioNombre']) && !empty($_POST['usuarioCorreo'] && !empty($_POST['usuarioMensaje']))) {
+        $name = $_POST['usuarioNombre'];
+        $email = $_POST['usuarioCorreo'];
+        $telefono = $_POST['usuarioTelefono'];
+        $mensaje = $_POST['usuarioMensaje'];
 
 
         $para = "From: ariel.schinocca@live.com.ar" . "\r\n";
-        $header = $_POST['correo'] . "\r\n";
-        $header .= $_POST['nombre']. "\r\n";
-        $header .= $_POST['telefono'];
+        $header = $_POST['usuarioCorreo'] . "\r\n";
+        $header .= $_POST['usuarioNombre']. "\r\n";
+        $header .= $_POST['usuarioTelefono'];
         $header = "X-Mailer: PHP/" . phpversion();
-        $header =  $_POST['correo'];
+        $header =  $_POST['usuarioCorreo'];
 
         $mail = mail($para, $name, $mensaje, $header );
         if ($mensaje) {

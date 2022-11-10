@@ -16,9 +16,7 @@ if ( isset($_POST['usuarioNombre'])) {
         $header =  $_POST['usuarioCorreo'];
 
         $mail = mail($para, $name, $mensaje, $header );
-        if ($mensaje) {
-            echo "<h4> mail enviado exitosamente! </h4>";
-        }
+        header("Location: mensajeForm.html");
     }
 }
 
@@ -41,5 +39,5 @@ if ( isset($_POST['usuarioNombre'])) {
 
 // mail($para, $asunto, utf8_decode($mensaje), $header);
 
-// header("Location:index.html");
+    
 ?>

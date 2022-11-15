@@ -430,64 +430,114 @@ h5{
 
 */
 
-/* flip card */
+/*  card */
 
-.cards-grid{
-    display: flex;
-    grid-gap: 80px;
-}
-
-.flip-card{
-    width: 320px;
-    height: 504px;
-    perspective: 2000px;
-}
-
-.flip-card-inner{
+.card{
     position: relative;
-    width: 100%;
-    border-radius: 28px;
-    box-shadow: 0 4px 20px rgba(black, 0.2);
-    transition: all 550ms;;
-    transform-style: preserve-3d;
-    transition-timing-function: cubic-bezier(0.3, 0.7, 1.0, 0.1);
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    margin: 84px;
 }
 
-.flip-card:hover .flip-card-inner{
-    transform: rotatey(-180deg);
-}
-
-
-
-
-.flip-card-front .flip-card-back{
+.card div{
+    position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 28px;
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     backface-visibility: hidden;
+    transition: 0.5s;
 }
 
-.flip-card-front{
-    background-position: center;
+.card ul li a{
+    position: relative;
+}
+
+.card .front{
+    background-image: url(./uñas4.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 2%;
+    transform: perspective(500px) rotateY(0deg);
 }
 
-.flip-card-front{
-    display: none;
-    backface-visibility: hidden
+.card .back{
+    background-color: rgb(247, 170, 221);
+    transform: perspective(500px) rotateY(180deg);
 }
 
-.flip-card-back{
-    text-align: center;
-    display: grid;
-    place-items: center;
-    padding: 32px;
-    transform: rotateY(180deg);
+.card:hover .front{
+    transform: perspective(500px) rotateY(180deg);
 }
 
+.card:hover .back{
+    transform: perspective(500px) rotateY(360deg);
+}
 
+.card .front2{
+    background-image: url(./uñas7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2%;
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.card .back2{
+    background-color: rgb(247, 170, 221);
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .front2{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .back2{
+    transform: perspective(500px) rotateY(360deg);
+}
+
+.card .front3{
+    background-image: url(./uñas8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2%;
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.card .back3{
+    background-color: rgb(247, 170, 221);
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .front3{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .back3{
+    transform: perspective(500px) rotateY(360deg);
+}
+
+.card .front4{
+    background-image: url(./uñas9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2%;
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.card .back4{
+    background-color: rgb(247, 170, 221);
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .front4{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .back4{
+    transform: perspective(500px) rotateY(360deg);
+}
 
 
 

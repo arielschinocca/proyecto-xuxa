@@ -5,10 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
     <header>
+            <!--nav responsive-->
+        
+            <nav class="navBar">
+                <input  type="checkbox"  id="check">
+                <label for="check" class="ckeckbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <img class="img-logo2"src="./2.png" width="90" alt="">
+                <div class="menu">
+                    <ul class="list">
+                        <li><a class="inicio" href="./index.html">Inicio</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li class="contacto"><a href="./formulario.html">Contacto</a>
+                    <ul>
+                        <li class="li-turnos">
+                            <a class="turnos2" href="#">Turnos</a>
+                        </li>
+                    </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        
+            <!-- mian 1 inicio -->
+        
+            <main class="main">
+            <img class="img-logo"src="./2.png" width="90" alt="">
+                <nav class="nav-encabezado">
+                    <div class="div-header">
+                        <div class="div-lista-header">
+                            <ul>
+                                <span>
+                                <li><strong><a class="inicio" href="./index.html">Inicio</a></strong></li>
+                                <li><a href="./servicios.html">Servicios</a></li>
+                                <li><a href="#">Nosotros</a></li>
+                                <li class="contacto"><a href="./formulario.html">Contacto</a>
+                            <ul>
+                                <li class="li-turnos">
+                                    <a class="turnos" href="#">Turnos</a>
+                                </li>
+                            </ul>
+                                </li>
+                                </span>
+                            </ul>
+                        </div>    
+                    </div>
+                </nav>
+            </main>
+    </header>
+        
         <!-- section 3 formulario-->
 
 <!--  Action: Escribir la ruta del archivo php -->
@@ -18,12 +70,48 @@
             <form  method="post" action="enviar.php" >
             <h4>Contacto</h4>
             <input type="text" name="usuarioNombre" placeholder="nombre">
+            <input type="text" name="usuarioApellido" placeholder="apellido">
             <input type="text" name="usuarioCorreo" placeholder="correo">
+            <input type="text" name="usuarioDomicilio" placeholder="domicilio">
             <input type="text" name="usuarioTelefono" placeholder="telefono">
             <textarea name="usuarioMensaje" placeholder="Escriba aqui su mensaje"></textarea>
             <input  type="submit" value="ENVIAR" id="boton">
             </form>
         </section>
-    </header>
+
+        <footer >
+            <h5 class="h5-footer"> xuxa.nails</h5>
+            <section class="section-footer">
+                <ul class="ul-footer">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li class="contacto"><a href="./formulario.html">contacto</a>
+                </ul>
+            </section>
+            <section class="section-footer2">
+                <ul class="servicios-footer">
+                    <li>Uñas gelificadas</li>
+                    <li>Kapping gel</li>
+                    <li>Esmaltado permanente</li>
+                    <li>Francesita</li>
+                </ul>
+            </section>
+            <section class="mapa">
+                <p>Nuestra ubicacion</p>
+                <iframe class="mapa2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.9334679329368!2d-58.53822088523247!3d-34.6311215664547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc819e8e95471%3A0xf15cd13bdaf0573e!2sFrancisco%20Madero%20621%2C%20Ciudadela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1667004902788!5m2!1ses-419!2sar"  height="350"style="border:10;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section class="redesSociales">
+            <ul class="redes">
+                <li><a href="http://www.facebook.com"><img class="img-face" src="./img/facebook_icon-icons.com_53612.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/xuxa.nails/"><img class="img-inst" src="./img/iconfinder-social-media-applications-3instagram-4102579_113804.png" alt=""></a></li>
+            </ul>
+            </section>
+        </footer>
+    
+    
+    
+    
+        <script src="./index.js"></script>
 </body>
 </html>

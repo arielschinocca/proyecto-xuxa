@@ -9,11 +9,9 @@
     <title>practica responsive</title>
 </head>
 <body>
-
-    
-
     <!--nav responsive-->
-
+    
+    <header>
     <nav class="navBar">
         <input  type="checkbox"  id="check">
         <label for="check" class="ckeckbtn">
@@ -23,7 +21,7 @@
         <div class="menu">
             <ul class="list">
                 <li><strong><a class="inicio" href="#">Inicio</a></strong></li>
-                <li><a href="#">Servicios</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
                 <li><a href="#">Nosotros</a></li>
                 <li class="contacto"><a href="./formulario.html">Contacto</a>
             <ul>
@@ -46,7 +44,7 @@
                     <ul>
                         <span>
                         <li><strong><a class="inicio" href="#">Inicio</a></strong></li>
-                        <li><a href="#">Servicios</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
                         <li><a href="#">Nosotros</a></li>
                         <li class="contacto"><a href="./formulario.html">Contacto</a>
                     <ul>
@@ -61,6 +59,7 @@
             </div>
         </nav>
     </main>
+    </header>
 
 
     <!-- section 1 imagen principal-->
@@ -111,7 +110,7 @@
         <h6>imagen2</h6>
         <div class="imagen">
             <a href="#imgModal4">&#60;</a>
-            <a href="#imgModal6"><img src="./img/uñas5.jpg" ></a>
+            <a href="#imgModal6"><img src="./img/iuñas5.jpg" ></a>
             <a href="#imgModal6">></a>
         </div>
         <a class="cerrar" href="">x</a>
@@ -364,7 +363,7 @@
         <section class="section-footer">
             <ul class="ul-footer">
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
                     <li><a href="#">Nosotros</a></li>
                     <li class="contacto"><a href="./formulario.html">contacto</a>
             </ul>
@@ -384,7 +383,7 @@
         <section class="redesSociales">
         <ul class="redes">
             <li><a href="http://www.facebook.com"><img class="img-face" src="./img/facebook_icon-icons.com_53612.png" alt=""></a></li>
-            <li><a href="https://www.instagram.com/xuxa.nails/"><img class="img-inst" src="./img/instagram.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/xuxa.nails/"><img class="img-inst" src="./img/iconfinder-social-media-applications-3instagram-4102579_113804.png" alt=""></a></li>
         </ul>
         </section>
     </footer>
@@ -392,6 +391,24 @@
 
 
 
-    <script src="./index.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+        apiKey: "AIzaSyCG54P1zQVDdvGfG5wfbSPzaB1_zHJ-zos",
+        authDomain: "proyecto-xuxa.firebaseapp.com",
+        projectId: "proyecto-xuxa",
+        storageBucket: "proyecto-xuxa.appspot.com",
+        messagingSenderId: "267056159063",
+        appId: "1:267056159063:web:411b7155b1567e19b24612"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    </script>
 </body>
 </html>

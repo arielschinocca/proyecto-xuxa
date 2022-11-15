@@ -3,7 +3,9 @@
 if ( isset($_POST['usuarioNombre'])) {
     if ( !empty($_POST['usuarioNombre']) && !empty($_POST['usuarioCorreo'] && !empty($_POST['usuarioMensaje']))) {
         $name = $_POST['usuarioNombre'];
+        $apellido = $POST['usuarioApellido'];
         $email = $_POST['usuarioCorreo'];
+        $domicilio = $_POST['usuarioDomicilio'];
         $telefono = $_POST['usuarioTelefono'];
         $mensaje = $_POST['usuarioMensaje'];
 
@@ -11,14 +13,14 @@ if ( isset($_POST['usuarioNombre'])) {
         $para = "From: ariel.schinocca@live.com.ar" . "\r\n";
         $header = $_POST['usuarioCorreo'] . "\r\n";
         $header .= $_POST['usuarioNombre']. "\r\n";
+        $header .= $_POST['usuarioApellido']. "\r\n";
+        $header .= $_POST['usuarioDomicilio']. "\r\n";
         $header .= $_POST['usuarioTelefono'];
         $header = "X-Mailer: PHP/" . phpversion();
         $header =  $_POST['usuarioCorreo'];
 
         $mail = mail($para, $name, $mensaje, $header );
-        if ($mensaje) {
-            echo "<h4> mail enviado exitosamente! </h4>";
-        }
+        header("Location: mensajeForm.html");
     }
 }
 
@@ -41,5 +43,5 @@ if ( isset($_POST['usuarioNombre'])) {
 
 // mail($para, $asunto, utf8_decode($mensaje), $header);
 
-// header("Location:index.html");
+    
 ?>
